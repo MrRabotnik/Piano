@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="piano_icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="stylesheet" href="piano.css">
+</head>
+<body onkeydown="pressingKey(event)" onkeyup="relisingKey(event)">
+
+    
+
+    <div class="note_section">
+        <div class="title">WELCOME TO PIANO ONLINE<br/>Beta version</div>
+    </div>
+
+    <div class="keys_section">
+        <div class="piano_keys" id="49" onmousedown="clicking(49)" onmouseup="relising(49)">
+            Do
+            <div class="piano_keys_bottom" id="49_bottom">1</div>
+        </div>
+        <div class="piano_keys" id="50" onmousedown="clicking(50)" onmouseup="relising(50)">
+            Re
+            <div class="piano_keys_bottom" id="50_bottom">2</div>
+        </div>
+        <div class="piano_keys" id="51" onmousedown="clicking(51)" onmouseup="relising(51)">
+            Mi
+            <div class="piano_keys_bottom" id="51_bottom">3</div>
+        </div>
+        <div class="piano_keys" id="52" onmousedown="clicking(52)" onmouseup="relising(52)">
+            Fa
+            <div class="piano_keys_bottom" id="52_bottom">4</div>
+        </div>
+        <div class="piano_keys" id="53" onmousedown="clicking(53)" onmouseup="relising(53)">
+            So
+            <div class="piano_keys_bottom" id="53_bottom">5</div>
+        </div>
+        <div class="piano_keys" id="54" onmousedown="clicking(54)" onmouseup="relising(54)">
+            La
+            <div class="piano_keys_bottom" id="54_bottom">6</div>
+        </div>
+        <div class="piano_keys" id="55" onmousedown="clicking(55)" onmouseup="relising(55)">
+            Ti
+            <div class="piano_keys_bottom" id="55_bottom">7</div>
+        </div>
+        <!-- <div class="piano_keys" id="56">
+            Do
+            <div class="piano_keys_bottom" id="56_bottom">8</div>
+        </div>
+        <div class="piano_keys" id="57">
+            Re
+            <div class="piano_keys_bottom" id="57_bottom">9</div>
+        </div>
+        <div class="piano_keys" id="48">
+            Mi
+            <div class="piano_keys_bottom" id="48_bottom">0</div>
+        </div>
+        <div class="piano_keys" id="189">
+            Fa
+            <div class="piano_keys_bottom" id="189_bottom">-</div>
+        </div>
+        <div class="piano_keys" id="187">
+            Sol
+            <div class="piano_keys_bottom" id="187_bottom">=</div>
+        </div> -->
+    </div>
+    <div style="height: 5vh;background: #222;"></div>
+
+
+
+
+
+    <script src="jquery.js"></script>
+    <script src="piano.js"></script>
+</body>
+</html>

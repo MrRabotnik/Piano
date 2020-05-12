@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    user-select: none;
+}
+
+.note_section{
+    height: 55vh;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 5vw; 
+    text-align: center;
+}
+
+.keys_section{
+    height: 40vh;
+    display: flex;
+    background: #222;
+    perspective: 400px;
+    justify-content: center;
+}
+
+.piano_keys{
+    width: 7%;
+    border: 1px solid black;
+    height: 96%;
+    transform-style: preserve-3d;
+    transform: rotateX(20deg);
+    background: white;
+    position: relative;
+    transform-origin: 50px 0;
+    z-index: 2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    transition: all 0.2s;    
+}
+
+/* ///////////////////////////////////////////// */
+.piano_keys:hover{
+    transform: rotateX(15deg);
+    background: #888;
+    color: white;
+    z-index: 1;
+}
+.piano_keys:hover .piano_keys_bottom{
+    transform: rotateX(45deg) !important;
+    color: black;
+
+}
+/* ///////////////////////////////////////////// */
+
+
+.pressed{
+    transform: rotateX(15deg);
+    background: #888;
+    color: white;
+    z-index: 1;
+}
+.pressed_bottom{
+    transform: rotateX(45deg) !important;
+    background: #555;
+    color: black;
+}
+
+.piano_keys_bottom{
+    width: 100%;
+    border: 1px solid black;
+    height: 4vh;
+    transform-style: preserve-3d;
+    transform: rotateX(-35deg);
+    background: rgb(200, 192, 192);
+    position: absolute;
+    bottom: -10%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2vw;
+}
